@@ -35,6 +35,7 @@ export const Searchbar = () => {
                     placeholder={data.name || "Enter City or Country name"}
                     className="search-input peer"
                     type="text"
+                    autoComplete={'off'}
                 />
                 <button type="submit" className="search-btn">
                     <svg
