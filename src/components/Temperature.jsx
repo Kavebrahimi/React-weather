@@ -34,7 +34,7 @@ export const Temperature = () => {
                 ) : (
                     <h3 className={'default-text'}>
                         <p>Looking Cozy? Check the Weather</p>
-                        <span className={'text-xs'}>for a better result enter the exact city name</span>
+                        <span className={'text-xs bg-black/30 p-2 rounded-md'}>for a better result enter the exact city name</span>
                     </h3>
                 )
             }
