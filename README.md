@@ -42,5 +42,5 @@ It allows users to **search for any city or country**, displaying **real-time we
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/weather-app.git
+git clone https://github.com/Kavebrahimi/React-weather.git
 cd weather-app
