@@ -21,7 +21,7 @@ It allows users to **search for any city or country**, displaying **real-time we
 - 🌦️ Dynamic **background changes** based on weather condition  
 - ⚡ Powered by **Redux + Redux-Saga** for state management  
 - 🎬 Smooth **GSAP animations** for UI transitions  
-- 💅 Fully responsive with **TailwindCSS**
+- ✨ Fully responsive with **TailwindCSS**
 
 ---
 
