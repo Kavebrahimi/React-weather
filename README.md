@@ -27,7 +27,7 @@ It allows users to **search for any city or country**, displaying **real-time we
 
 ## 📸 Screenshots
 
-![Weather App Screenshot](weather.png)
+![Weather App Screenshot](screenshot.png)
 
 ---
 
