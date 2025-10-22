@@ -1,16 +1,46 @@
-# React + Vite
+# 🌤️ Mini Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Redux](https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white)
+![Redux-Saga](https://img.shields.io/badge/Redux--Saga-999999?style=for-the-badge&logo=redux-saga&logoColor=white)
+![Axios](https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white)
+![GSAP](https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white)
 
-Currently, two official plugins are available:
+A modern **React Weather App** built using **Redux, Redux-Saga, Axios, GSAP**, and **TailwindCSS**.  
+Fetches weather data from the **[OpenWeather API](https://openweathermap.org/api)**.  
+It allows users to **search for any city or country**, displaying **real-time weather details** such as temperature, humidity, feels-like temperature, and current date & time with smooth animations.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🌍 Search for any **city or country**  
+- 🕒 Displays **real-time date and time**  
+- 🌡️ Shows **temperature, humidity, and feels-like** values  
+- 🌦️ Dynamic **background changes** based on weather condition  
+- ⚡ Powered by **Redux + Redux-Saga** for state management  
+- 🎬 Smooth **GSAP animations** for UI transitions  
+- 💅 Fully responsive with **TailwindCSS**
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📸 Screenshots
+
+![Weather App Screenshot](weather.png)
+
+---
+
+## 🌐 Live Demo
+
+[Live Demo](https://your-demo-link-here.com)  
+
+---
+
+## 💻 Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/weather-app.git
+cd weather-app
