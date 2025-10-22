@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@layer base{
+    body{
+        @apply text-xs sm:text-sm md:text-base
+    }
+    .inner-container{
+        @apply px-2 sm:px-8 py-8 bg-gradient-to-b from-black/90 via-black/40 to-black/0
+    }
+    h1{
+        @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl
+    }
+    h2{
+        @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold
+    }
+    h3{
+        @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold
+    }
+    .search-container {
+        @apply flex items-center flex-1/3 border-b-2 border-b-white rounded-l-xl text-white font-semibold border-l-2 border-l-transparent
+        focus-within:border-l-white transition-all duration-500 focus-within:px-2 shadow-transparent shadow-[-10px_10px_5px]
+        focus-within:shadow-black/20
+    }
+    .search-input{
+        @apply w-full p-1 sm:p-2 outline-none focus:-translate-y-0.5 transition-transform duration-500
+    }
+    .temperature-container{
+        @apply flex  flex-col text-white p-5 bg-gradient-to-bl from-black/40 to-black/20 shadow-lg
+         shadow-black/20 rounded-lg backdrop-blur-xs text-center w-[90%] sm:w-1/2 md:w-2/5 lg:w-4/12 mx-auto mt-30
+    }
+    .temperature{
+        @apply text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold
+    }
+    .weather-status {
+        @apply text-center text-white text-shadow-lg mt-5 font-bold p-4 rounded-md
+    }
+    .default-text{
+        @apply font-semibold text-white text-center mt-20 text-shadow-lg
+    }
+    .search-btn {
+        @apply bg-white/10 rounded-full p-0.5 md:scale-125   transition-all duration-500
+        translate-y-2 opacity-0 pointer-events-none peer-focus:opacity-100 peer-focus:-translate-y-1 peer-focus:pointer-events-auto
+    }
+    .city-name{
+        @apply text-xl sm:text-2xl md:text-3xl font-semibold
+    }
+}
+
+
+.main-container{
+    height: 100vh;
+}
+.bg-default{
+    background-image: url("/assets/images/default.jpg");
+}
+.bg-clean {
+    background-image: url("/assets/images/clean.jpg");
+}
+.bg-freezing{
+    background-image: url("/assets/images/snow.jpg");
+}
+.bg-cloudy{
+    background-image: url("/assets/images/cloud.jpg");
+}
+.bg-rainy{
+    background-image: url("/assets/images/rain.jpg");
+}
+.bg-windy{
+    background-image: url("/assets/images/sluppy.jpg");
+}
+.bg-tornado{
+    background-image: url("/assets/images/thunder.jpg");
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    display: block;
+    margin: 20px auto;
+    position: relative;
+    border: 3px solid #FFF;
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: animloader 2s linear infinite;
+}
+.loader::after {
+    content: '';
+    box-sizing: border-box;
+    width: 6px;
+    height: 24px;
+    background: #FFF;
+    transform: rotate(-45deg);
+    position: absolute;
+    bottom: -20px;
+    left: 46px;
+}
+
+@keyframes animloader {
+    0% {
+        transform: translate(-10px, -10px);
+    }
+    25% {
+        transform: translate(-10px, 10px);
+    }
+    50% {
+        transform: translate(10px, 10px);
+    }
+    75% {
+        transform: translate(10px, -10px);
+    }
+    100% {
+        transform: translate(-10px, -10px);
+    }
+}
