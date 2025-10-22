@@ -14,12 +14,13 @@ export const Bg = ({ children }) => {
         const weatherStatus = data.weather[0].main;
 
         let newBg = "default";
-        if (weatherStatus === "Rain") newBg = "rainy";
+        if (weatherStatus === "Rain") newBg = "drizzle";
         else if (weatherStatus === "Clear") newBg = "clean";
         else if (weatherStatus === "Clouds") newBg = "cloudy";
         else if (weatherStatus === "Snow") newBg = "freezing";
         else if (weatherStatus === "Squall") newBg = "windy";
         else if (weatherStatus === "Tornado") newBg = "tornado";
+        else if (weatherStatus === "Drizzle") newBg = "rainy"
 
         if (newBg !== bgChange) {
             setNextBg(newBg);
